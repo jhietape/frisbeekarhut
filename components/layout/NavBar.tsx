@@ -36,7 +36,7 @@ const NavBar: NextPage<any> = ({ children }: INavBar) => {
   ];
 
   const menu_page_items = pages.map((page: IPageLink) => (
-    <MenuLink pathName={page.name} href={page.url} />
+    <MenuLink key={page.name} pathName={page.name} href={page.url} />
   ));
 
   return (

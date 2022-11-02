@@ -5,7 +5,7 @@ import { IMenuLink } from "./types";
 const MenuLink = ({ href, pathName }: IMenuLink) => {
   const router = useRouter();
   return (
-    <li key={pathName}>
+    <li>
       <Link href={href} passHref>
         <a className={router.pathname == href ? "active" : ""}>{pathName}</a>
       </Link>
